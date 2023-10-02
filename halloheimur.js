@@ -1,1 +1,1 @@
-console.loge(halloheimur)
+console.log(halloheimur)
