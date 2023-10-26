@@ -107,6 +107,54 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+footer {
+  background-color: #3C2A1E;
+  color: #FEFEFE;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.bigFooter {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bigFooter ul {
+  list-style: none;
+}
+
+.smallFooter {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 3;
+  margin: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 1000px) {
+  .smallFooter {
+    grid-column: span 1;
+  }
+}
+.smallFooter h4 {
+  border-bottom: yellow solid 2px;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin-top: 0.5rem;
+  border-top: yellow solid 2px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+body {
+  max-width: 1400px;
+  align-content: center;
+}
 body .voru_listi {
   display: grid;
   gap: 30px;
@@ -126,7 +174,7 @@ body .voru_listi .spjald {
   border-color: white;
 }
 body .voru_listi .spjald > :not(img) {
-  padding-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 body .voru_listi .spjald img {
   object-fit: cover;
@@ -143,10 +191,20 @@ body .voru_listi .spjald .tags {
 }
 body .voru_listi .spjald .tags div {
   margin-right: 0.5rem;
-  margin-left: 1rem;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   background-color: #cab2a1;
+  border-radius: 3px;
+}
+body .voru_listi .spjald button {
+  display: flex;
+  justify-content: center;
+  justify-self: flex-end;
+  min-width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  border: solid grey 1px;
   border-radius: 3px;
 }
 
