@@ -104,97 +104,89 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-footer {
-  background-color: #3C2A1E;
-  color: #FEFEFE;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-}
-
-.bigFooter {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.bigFooter ul {
-  list-style: none;
-}
-
-.smallFooter {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 3;
-  margin: 1rem;
-  text-align: left;
-}
-
-@media (min-width: 1000px) {
-  .smallFooter {
-    grid-column: span 1;
-  }
-}
-.smallFooter h4 {
-  border-bottom: yellow solid 2px;
-  margin-bottom: 0.5rem;
-}
-
-footer p {
-  margin-top: 0.5rem;
-  border-top: yellow solid 2px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-body .voru_listi {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(12, 1fr);
-  background-color: #cab2a1;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-body .voru_listi .spjald {
-  grid-column-start: span 3;
-  grid-template-rows: auto 1fr;
-  border-radius: 4px;
-  background-color: white;
-  border: solid 1rem;
-  border-color: white;
-}
-body .voru_listi .spjald > :not(img) {
-  padding-top: 0.5rem;
-}
-body .voru_listi .spjald img {
-  object-fit: cover;
-  object-position: center;
-  max-width: 100%;
-  min-width: 100%;
-  display: flex;
-}
-body .voru_listi .spjald h3 {
-  display: flex;
-}
-body .voru_listi .spjald .tags {
-  display: inline-flex;
-}
-body .voru_listi .spjald .tags div {
-  margin-right: 0.5rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  background-color: #cab2a1;
-  border-radius: 3px;
-}
-
 .pöntun img {
   width: 5.5rem;
   height: 5.5rem;
   object-position: -3rem;
   object-fit: cover;
+}
+
+/*Vara scss*/
+.modurbord {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.modurbord .mynd img {
+  width: 100%;
+}
+
+.modurbord .um-mynd h1 {
+  margin: 0;
+}
+
+.modurbord .um-mynd {
+  display: flex;
+  flex-direction: column;
+}
+
+.modurbord .um-mynd .tags {
+  display: flex;
+}
+
+.modurbord .um-mynd .tags p {
+  background-color: #E1CEC2;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modurbord .um-mynd .tags p:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.modurbord .um-mynd .purchase-info {
+  display: flex;
+}
+
+.modurbord .um-mynd .purchase-info p {
+  flex: 1;
+}
+
+.modurbord .um-mynd .purchase-info button {
+  width: 20rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FEFEFE;
+  height: 2.5rem;
+}
+
+.descriptions {
+  display: grid;
+  margin-bottom: 4rem;
+}
+
+.descriptions .describe {
+  margin-right: 20%;
+  margin-left: 20%;
+  height: fit-content;
+}
+
+.describe:nth-child(1) {
+  padding-top: 4rem;
+}
+
+.descriptions h2 {
+  margin-bottom: 4rem;
+}
+
+.Connections {
+  background-color: #E1CEC2;
+}
+
+.Connections h2 {
+  padding-top: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
