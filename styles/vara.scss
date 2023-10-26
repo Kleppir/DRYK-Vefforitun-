@@ -69,20 +69,24 @@
   
   .descriptions .describe {
     width: 50%;
+    margin-bottom: 3rem;
   }
   
   .describe:nth-child(1) {
     padding-top: 4rem;
+  }
+
+  .describe:nth-child(3) {
+    margin: 0;
   }
   
   .descriptions h2 {
     margin-bottom: 4rem;
   }
   
-  .Connections {
-    background-color: #E1CEC2;
-  }
-  
+
   .Connections h2 {
     padding-top: 2rem;
+    background-color: $coffee-white;
+    padding-left: 2rem;
   }

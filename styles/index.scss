@@ -32,6 +32,15 @@
     align-items: flex-start;
 }
 
+.indexContent img {
+    max-width: 40rem;
+}
+
 .indexContent .photo {
     display: inline-flex;
+    width: 100%;
+}
+
+.indexProducts {
+    margin-top: 10rem;
 }
