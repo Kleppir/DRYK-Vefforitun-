@@ -109,49 +109,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-body .voru_listi {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(12, 1fr);
-  background-color: #cab2a1;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-body .voru_listi .spjald {
-  grid-column-start: span 3;
-  grid-template-rows: auto 1fr;
-  border-radius: 4px;
-  background-color: white;
-  border: solid 1rem;
-  border-color: white;
-}
-body .voru_listi .spjald > :not(img) {
-  padding-top: 0.5rem;
-}
-body .voru_listi .spjald img {
-  object-fit: cover;
-  object-position: center;
-  max-width: 100%;
-  min-width: 100%;
-  display: flex;
-}
-body .voru_listi .spjald h3 {
-  display: flex;
-}
-body .voru_listi .spjald .tags {
-  display: inline-flex;
-}
-body .voru_listi .spjald .tags div {
-  margin-right: 0.5rem;
-  margin-left: 1rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  background-color: #cab2a1;
-  border-radius: 3px;
-}
-
 footer {
   background-color: #3C2A1E;
   color: #FEFEFE;
@@ -194,6 +151,55 @@ footer p {
   border-top: yellow solid 2px;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+body .voru_listi {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #cab2a1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+body .voru_listi .spjald {
+  grid-column-start: span 3;
+  grid-template-rows: auto 1fr;
+  border-radius: 4px;
+  background-color: white;
+  border: solid 1rem;
+  border-color: white;
+}
+body .voru_listi .spjald > :not(img) {
+  padding-top: 0.5rem;
+}
+body .voru_listi .spjald img {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  min-width: 100%;
+  display: flex;
+}
+body .voru_listi .spjald h3 {
+  display: flex;
+}
+body .voru_listi .spjald .tags {
+  display: inline-flex;
+}
+body .voru_listi .spjald .tags div {
+  margin-right: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  background-color: #cab2a1;
+  border-radius: 3px;
+}
+
+.pöntun img {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-position: -3rem;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
