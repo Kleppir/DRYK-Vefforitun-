@@ -1,18 +1,15 @@
 @charset "UTF-8";
 .pöntun {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   padding-bottom: 1rem;
-}
-
-.left {
-  align-items: right;
 }
 
 .pöntun .inputs {
   display: grid;
-  grid-template-columns: 50% 50%;
-  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.88rem;
   margin-top: 1rem;
 }
 
@@ -24,11 +21,6 @@
   border: 1px solid #000;
   background: #FEFEFE;
   height: 2.5rem;
-  align-self: stretch;
-}
-
-.pöntun .inputs .left input {
-  width: 90%;
 }
 
 .buyer {
@@ -47,10 +39,11 @@ legend {
   border-radius: 5px;
   border: 1px solid #3C2A1E;
   background: #6F4E37;
-  display: flex;
-  padding: 10px 15px;
-  align-items: flex-start;
-  gap: 10px;
+  margin-left: 15px;
+}
+
+.order button p {
+  color: #FFF;
 }
 
 .karfa .products .product {
@@ -60,6 +53,11 @@ legend {
 .titill {
   padding-left: 4rem;
   flex: 1;
+  align-self: center;
+}
+
+.verd {
+  align-self: center;
 }
 
 .total {
@@ -78,6 +76,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.pöntun img {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-position: -3rem;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
