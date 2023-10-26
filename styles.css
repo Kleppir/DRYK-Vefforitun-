@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "lato";
 }
 
 * html {
@@ -15,43 +14,11 @@
 }
 
 @font-face {
-  font-family: "Lato";
+  font-family: "Lora";
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/Lato-Regular.ttf);
+  src: url(loremipsum);
 }
-:root {
-  --columns: 12;
-  --gutter: 30px;
-  --offset: 1rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-* html {
-  box-sizing: border-box;
-}
-* *,
-* *:before,
-* *:after {
-  box-sizing: inherit;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/Lato-Regular.ttf);
-}
-:root {
-  --columns: 12;
-  --gutter: 30px;
-  --offset: 1rem;
-}
-
 .pöntun {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -137,12 +104,15 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/******* Footer ******/
+
 footer {
   background-color: #3C2A1E;
   color: #FEFEFE;
   display: flex;
   flex-direction: column;
   width: 100%;
+
   text-align: center;
 }
 
@@ -157,11 +127,11 @@ footer {
 }
 
 .smallFooter {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 3;
-  margin: 1rem;
-  text-align: left;
+display: flex;
+flex-direction: column;
+grid-column: span 3;
+margin: 1rem;
+text-align: left;
 }
 
 @media (min-width: 1000px) {
@@ -169,7 +139,8 @@ footer {
     grid-column: span 1;
   }
 }
-.smallFooter h4 {
+
+.smallFooter h4{
   border-bottom: yellow solid 2px;
   margin-bottom: 0.5rem;
 }
@@ -179,55 +150,6 @@ footer p {
   border-top: yellow solid 2px;
   margin-left: 10%;
   margin-right: 10%;
-}
-
-body .voru_listi {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(12, 1fr);
-  background-color: #cab2a1;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-body .voru_listi .spjald {
-  grid-column-start: span 3;
-  grid-template-rows: auto 1fr;
-  border-radius: 4px;
-  background-color: white;
-  border: solid 1rem;
-  border-color: white;
-}
-body .voru_listi .spjald > :not(img) {
-  padding-top: 0.5rem;
-}
-body .voru_listi .spjald img {
-  object-fit: cover;
-  object-position: center;
-  max-width: 100%;
-  min-width: 100%;
-  display: flex;
-}
-body .voru_listi .spjald h3 {
-  display: flex;
-}
-body .voru_listi .spjald .tags {
-  display: inline-flex;
-}
-body .voru_listi .spjald .tags div {
-  margin-right: 0.5rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  background-color: #cab2a1;
-  border-radius: 3px;
-}
-
-.pöntun img {
-  width: 5.5rem;
-  height: 5.5rem;
-  object-position: -3rem;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
