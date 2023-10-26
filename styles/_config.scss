@@ -1,0 +1,42 @@
+
+// grunnstillingar
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+*{
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}
+// grid
+$columns: 12;
+$gutter: 30px;
+$offset: 20px;
+
+// litir
+
+$coffee-white: #cab2a1;
+$dark-brown: #3C2A1E;
+$light-brown: #6F4E37;
+$cream-white: #FEFEFE;
+$white: #ffffff;
+$black: #000000;
+
+// letur stillingar
+
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-display: swap;
+    src: url(loremipsum);
+}
+
+
