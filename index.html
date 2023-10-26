@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <nav class="nav">
-              <h2>Tæknibúðin</h2>
-              <div class="navSearch">
-                  <a href="sidur/vara.html">Vara</a>
-              </div>
-              <ul>
-                <li><a href="sidur/listi.html">Nýar vörur</a></li>
-                <li><a href="sidur/listi.html">Tilboðs vörur</a></li>
-                <li><a href="sidur/listi.html">Allar vörur</a></li>
-              </ul>
-              <div>
-                <a href="sidur/panta.html" class="NavPantaLogo">Panta</a>
-              </div>
-            </nav>
-          <header>
-          </header>
+  <div class="wrapper">
+    <div class="header">
+      <nav class="nav">
+
+        <div class="navHeader navChild"><img src="myndir/Logo.png" alt="Logo">
+          <h2 class="navChild"><a href="index.html">Tæknibúðin</a></h2>
         </div>
+
+        <div class="navSearch navChild">
+          <label for="input">
+            <input type="search" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+            <div class="navSearchMynd">
+              <a href="sidur/vara.html"><img src="myndir/gler.png" alt="Leita"></a>
+            </div>
+          </label>
+        </div>
+        
+        <ul class="navList navChild">
+          <li><a href="sidur/listi.html">Nýar vörur</a></li>
+          <li><a href="sidur/listi.html">Tilboðs vörur</a></li>
+          <li><a href="sidur/listi.html">Allar vörur</a></li>
+        </ul>
+        <div class="navOrder navChild">
+          <a href="sidur/panta.html" class="NavPantaLogo"><img src="myndir/Cart icon.png" alt="Panta"></a>
+        </div>
+      </nav>
+      <header>
+      </header>
     </div>
-    <footer>
-      <div class="bigFooter">
-        <div class="smallFooter">
-            <h4>OPNUNARTÍMI</h4>
-            <ul>
-              <li>Opið alla virka daga frá 9:00–18:00</li>
-                <li>Opið á laugardögum frá 12:00–16:00</li>
-                <li>Lokað á sunnudögum</li>
-            </ul>
-        </div>
-        <div class="smallFooter">
-          <h4>HAFÐU SAMBAND</h4>
-          <ul>
-            <li>Skiptiborð: 234–4568</li>
-            <li>Tölvupóstur: thjonusta@example.org</li>
-          </ul>
-        </div>
-        <div class="smallFooter">
-          <h4>ANNAÐ</h4>
-          <ul>
-            <li>Rekja sendingu</li>
-            <li>Skilaréttur</li>
-            <li>Um okkur</li>
-            <li>Störf</li>
-          </ul>
-        </div>
+  </div>
+  <footer>
+    <div class="bigFooter">
+      <div class="smallFooter">
+        <h4>OPNUNARTÍMI</h4>
+        <ul>
+          <li>Opið alla virka daga frá 9:00–18:00</li>
+          <li>Opið á laugardögum frá 12:00–16:00</li>
+          <li>Lokað á sunnudögum</li>
+        </ul>
       </div>
-      <p>© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
-    </footer>
+      <div class="smallFooter">
+        <h4>HAFÐU SAMBAND</h4>
+        <ul>
+          <li>Skiptiborð: 234–4568</li>
+          <li>Tölvupóstur: thjonusta@example.org</li>
+        </ul>
+      </div>
+      <div class="smallFooter">
+        <h4>ANNAÐ</h4>
+        <ul>
+          <li>Rekja sendingu</li>
+          <li>Skilaréttur</li>
+          <li>Um okkur</li>
+          <li>Störf</li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
+  </footer>
 </body>
+
 </html>
