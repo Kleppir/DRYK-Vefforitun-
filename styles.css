@@ -5,7 +5,6 @@
   font-family: "lato";
 }
 
-
 * html {
   box-sizing: border-box;
 }
@@ -33,7 +32,7 @@
   padding-bottom: 1rem;
 }
 
-.pöntun .left {
+.left {
   align-items: right;
 }
 
@@ -63,11 +62,11 @@
   margin-top: 1rem;
 }
 
-.pöntun fieldset {
+fieldset {
   border: 0;
 }
 
-.pöntun legend {
+legend {
   padding-top: 1rem;
 }
 
@@ -199,6 +198,124 @@ body .voru_listi .spjald .tags div {
   height: 5.5rem;
   object-position: -3rem;
   object-fit: cover;
+}
+
+.nav {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  background-color: transparent;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navChild {
+  margin: 0.5rem;
+  vertical-align: center;
+  width: 100%;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.navHeader {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.navOrder {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navList li {
+  grid-row: span 1;
+  font-size: 300%;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.navSearch {
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column: auto;
+}
+
+.navSearch input {
+  border-radius: 0.25rem;
+  height: 30px;
+  width: 100%;
+}
+
+.navSearch img {
+  width: 1rem;
+  flex-shrink: 0;
+  padding: 0.5rem;
+}
+
+.navSearch label {
+  display: flex;
+  flex-direction: row;
+}
+
+.navSearchMynd {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 1rem;
+    background-color: transparent;
+  }
+  .navOrder {
+    grid-column-start: 12;
+    grid-column-end: span 1;
+    grid-row: auto;
+  }
+  .navList {
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 8;
+    grid-column-end: span 3;
+    grid-row: auto;
+  }
+  .navList li {
+    margin-right: 2rem;
+    font-size: 100%;
+    margin-bottom: 0;
+  }
+  .navSearch {
+    grid-column-start: 4;
+    grid-column-end: span 4;
+    grid-row: auto;
+  }
+  .navHeader {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
