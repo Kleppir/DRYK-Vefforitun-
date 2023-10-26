@@ -13,6 +13,7 @@
   .modurbord .um-mynd h1 {
     margin: 0;
     padding-bottom: 1rem;
+    padding-top: 1rem;
   }
   
   .modurbord .um-mynd {
@@ -22,6 +23,7 @@
   
   .modurbord .um-mynd .tags {
     display: flex;
+    padding-bottom: 1rem;
   }
   
   .modurbord .um-mynd .tags p {
@@ -33,33 +35,40 @@
   .modurbord .um-mynd .tags p:nth-child(1) {
     margin-right: 1rem;
   }
+
+  .modurbord .um-mynd .description {
+    flex: 1;
+  }
   
   .modurbord .um-mynd .purchase-info {
     display: flex;
+    vertical-align: center;
+    padding-bottom: 1rem;
   }
-  
+
   .modurbord .um-mynd .purchase-info p {
+    align-self: center;
     flex: 1;
   }
   
   .modurbord .um-mynd .purchase-info button {
     width: 20rem;
-    margin-bottom: 1rem;
     border-radius: 5px;
     border: 1px solid #000;
     background: #FEFEFE;
     height: 2.5rem;
+    align-self: center;
   }
   
   .descriptions {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 4rem;
+    align-items: center;
   }
   
   .descriptions .describe {
-    margin-right: 20%;
-    margin-left: 20%;
-    height: fit-content;
+    width: 50%;
   }
   
   .describe:nth-child(1) {
