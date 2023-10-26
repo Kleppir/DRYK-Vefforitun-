@@ -204,5 +204,83 @@ body .voru_listi .spjald .tags div {
   object-fit: cover;
 }
 
+/*Vara scss*/
+.modurbord {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.modurbord .mynd img {
+  width: 100%;
+}
+
+.modurbord .um-mynd h1 {
+  margin: 0;
+}
+
+.modurbord .um-mynd {
+  display: flex;
+  flex-direction: column;
+}
+
+.modurbord .um-mynd .tags {
+  display: flex;
+}
+
+.modurbord .um-mynd .tags p {
+  background-color: #E1CEC2;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modurbord .um-mynd .tags p:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.modurbord .um-mynd .purchase-info {
+  display: flex;
+}
+
+.modurbord .um-mynd .purchase-info p {
+  flex: 1;
+}
+
+.modurbord .um-mynd .purchase-info button {
+  width: 20rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FEFEFE;
+  height: 2.5rem;
+}
+
+.descriptions {
+  display: grid;
+  margin-bottom: 4rem;
+}
+
+.descriptions .describe {
+  margin-right: 20%;
+  margin-left: 20%;
+  height: fit-content;
+}
+
+.describe:nth-child(1) {
+  padding-top: 4rem;
+}
+
+.descriptions h2 {
+  margin-bottom: 4rem;
+}
+
+.Connections {
+  background-color: #E1CEC2;
+}
+
+.Connections h2 {
+  padding-top: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
 
