@@ -1,0 +1,64 @@
+
+
+body {
+   
+    
+
+.voru_listi {
+    display: grid;
+    gap: $gutter;
+    grid-template-columns: repeat(($columns), 1fr);
+    background-color: $coffee-white;
+    padding-top : 1rem;
+    padding-bottom: 1rem;
+    padding-left: $offset;
+    padding-right: $offset;
+
+   
+    .spjald {
+        
+        grid-column-start: span 3;
+        grid-template-rows: auto 1fr;
+        border-radius: 4px;
+        background-color: white;
+        border: solid 1rem;
+        border-color: white;
+        
+        & > :not(img) {
+            padding-top : 0.5rem;
+        
+        }
+        
+       
+        img {
+            object-fit: cover;
+            object-position: center;
+            max-width: 100%;
+            min-width: 100%;
+            display: flex;
+            
+        }
+        h3 {
+            display: flex;
+    
+        }
+        .tags {
+            display: inline-flex;
+            
+            div{
+                margin-right: 0.5rem;
+                margin-left: 1rem;
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
+                background-color: $coffee-white;
+                border-radius: 3px;
+            }
+
+        }
+        p {
+            
+        }
+
+    }
+}
+}
