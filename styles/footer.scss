@@ -26,20 +26,20 @@ footer {
   text-align: left;
 }
   
-  @media (min-width: 1000px) {
+  @media (min-width: 500px) {
     .smallFooter {
       grid-column: span 1;
     }
 }
   
   .smallFooter h4{
-    border-bottom: yellow solid 2px;
+    border-bottom: #E1CEC2 solid 2px;
     margin-bottom: 0.5rem;
 }
   
   footer p {
     margin-top: 0.5rem;
-    border-top: yellow solid 2px;
+    border-top: #E1CEC2 solid 2px;
     margin-left: 10%;
     margin-right: 10%;
 }

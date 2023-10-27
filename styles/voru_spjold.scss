@@ -1,6 +1,10 @@
 
 
 body {
+    max-width: 1400px;
+    align-content: center;
+
+
    
     
 
@@ -13,6 +17,7 @@ body {
     padding-bottom: 1rem;
     padding-left: $offset;
     padding-right: $offset;
+    
 
    
     .spjald {
@@ -25,7 +30,7 @@ body {
         border-color: white;
         
         & > :not(img) {
-            padding-top : 0.5rem;
+            margin-top : 0.5rem;
         
         }
         
@@ -54,8 +59,19 @@ body {
             }
 
         }
-       
+        button {
+            display: flex;
+            justify-content: center;
+            justify-self: flex-end;
+            min-width: 100%;
+            padding-top : 0.5rem;
+            padding-bottom: 0.5rem;
+            background-color: white;
+            border: solid grey 1px;
+            border-radius: 3px;
 
+        }
+       
     }
 }
 }
